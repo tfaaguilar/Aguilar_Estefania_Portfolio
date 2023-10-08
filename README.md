@@ -19,20 +19,24 @@ What unique contributions can I make?
 
 * Usability Testing: I conduct usability tests and gather feedback to refine designs and improve user satisfaction.
 
-* Installation
+## Installation
+
 No installation is needed for this site. HTMLs will work on any browsers.
 
-* Contributing
-Fork it!
-Create your feature branch: git checkout -b my-new-feature
-Commit your changes: git commit -am 'Add some feature'
-Push to the branch: git push origin my-new-feature
-Submit a pull request :D
+## Contributing
 
-* Credits
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
 
-Estefania Aguilar
+## Credits
 
-License
+Estefania Aguuilar
+
+## License
+
 MIT
+
 
