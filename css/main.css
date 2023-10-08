@@ -1,0 +1,81 @@
+@font-face {
+  font-family: cantarellregular;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/cantarell_regula-webfont.woff") format("woff"), url("../fonts/cantarell_regula-webfont.woff2") format("woff2");
+}
+body {
+  font-family: helvetica, arial, sans-serif;
+}
+
+h2 {
+  font-family: "cantarellregular", helvetica, arial;
+  font-size: 28px;
+  color: #BA3B0A;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+#main-header {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+#main-header #logo {
+  display: block;
+  height: 50px;
+  max-width: 300px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#main-header #main-nav {
+  margin-top: 40px;
+}
+#main-header #main-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin-top: 20px;
+}
+#main-header #main-nav ul li {
+  margin-right: 20px;
+}
+#main-header:last-child {
+  margin-right: 0;
+}
+#main-header #main-nav a {
+  color: #FFA458;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  #main-header #main-nav ul {
+    justify-content: flex-end;
+  }
+  #main-header #logo {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.card {
+  padding: 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+#about-us {
+  margin-bottom: 20px;
+}
+
+#founders section {
+  margin-bottom: 40px;
+}
