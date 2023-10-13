@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <!-- in mobile set initial zoom level of page to 100%, set site size to equal device width not a larger canvas that is shrunk down-->
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <title>Estefania Aguilar</title>
-    <!-- Link to reset or normalize before main.css
-    only choose one -->
+    <title>Estefania Portfolio</title>
+    <link href="css/normalize.css">
     <link href="css/grid.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
   </head>
 
   <body>
-    <h1 class="hidden">Estefania Aguilar</h1>
+    <h1 class="hidden">Estefania Aguilar Portfolio</h1>
     <header id="main-header" class="grid-con">
       <div class="col-span-4">
         <img src="images/logo-color.svg" id="logo" />
@@ -25,8 +24,63 @@
         </ul>
       </nav>
     </header>
-    <main></main>
-    <footer class="grid-con"></footer>
+
+    <main>
+      <section id="hero" class="grid">
+            <img src="https://via.placeholder.com/1170x400/000000/ffffff" class="hero-image" alt="hero-image">
+            <div id="explore" class="box-color2"></div>
+            <div id="tag-line" class="box-color2">
+                <h2>*Estefania*</h2>
+                <p>A creative mind is the compass to the best solutions</p>
+            </div>
+        </section>
+
+        <section class="grid">
+            <h2>Contributions</h2>
+
+           <section class="feature box-color">
+            <h3>User Experience</h3>
+           </section>
+           
+           <section class="feature box-color">
+            <h3>Web development</h3>
+           </section> 
+
+           <section class="feature box-color">
+            <h3>Multimedia production</h3>
+           </section>
+
+        </section>
+
+        <section class="grid">
+            <h2>Portions of my Projects</h2>
+
+           <section class="feature box-color">
+            <h3>Project 1</h3>
+           </section>
+           
+           <section class="feature box-color">
+            <h3>Project 2</h3>
+           </section> 
+
+           <section class="feature box-color">
+            <h3>Project 3</h3>
+           </section>
+
+        </section>
+    </main>
+
+    <footer>
+      <div id="footer-con-full" class="box-color">
+        <div class="container">
+            <footer class="grid">
+                <nav id="footer-nav" class="box-color2">
+                    <h2 class="hidden">Footer Navigation</h2>
+                </nav>
+            </footer>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/main.js"></script>
   </body>
