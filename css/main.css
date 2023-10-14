@@ -5,13 +5,13 @@
   src: url("../fonts/alata-regular.woff") format("woff"), url("../fonts/alata-regular.woff2") format("woff2");
 }
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: "alataregular", helvetica, arial, sans-serif;
 }
 
 h2 {
-  font-family: "cantarellregular", helvetica, arial;
+  font-family: "alataregular", helvetica, arial;
   font-size: 28px;
-  color: #BA3B0A;
+  color: #f2d8d8;
   margin-bottom: 20px;
 }
 
@@ -49,7 +49,7 @@ p {
   margin-right: 0;
 }
 #main-header #main-nav a {
-  color: #FFA458;
+  color: #5c8984;
   text-decoration: none;
 }
 
