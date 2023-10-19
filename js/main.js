@@ -1,3 +1,4 @@
+// Logo animation using "Green Sock"
 
 const logo = document.getElementById('logo');
 
@@ -11,6 +12,8 @@ const logo = document.getElementById('logo');
     });
 
 
+//Burger menu
+
 (function(){
 
 	let button = document.querySelector("#button");
@@ -20,11 +23,6 @@ const logo = document.getElementById('logo');
 		burgerCon.classList.toggle("slide-toggle");
 		button.classList.toggle("expanded");
 	};
-
-	// let hamburgerMenu = () => {
-	// 	burgerCon.classList.toggle("slide-toggle");
-	// 	button.classList.toggle("expanded");
-	// };
 
 	button.addEventListener("click", hamburgerMenu, false);		
 })();
