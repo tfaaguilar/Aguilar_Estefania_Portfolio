@@ -1,27 +1,33 @@
-//function expression
-let anonFunction = function() {
-    console.log("anon function called");
-}
 
-anonFunction();
+const logo = document.getElementById('logo');
 
-let anonFunction2 = function() {
-    console.log("anon2 function called");
-}();
-
-
-// IIFEE regular syntax
-(function() {
-    console.log("IIFE called");
-    const userName = "Marco";
-    console.log(userName);
-})();
+    gsap.to(logo, {
+        duration: 2, 
+        x: 200, 
+        rotation: 360, 
+        scale: 2, 
+        backgroundColor: "#F2D8D8", 
+        ease: "power2.inOut", 
+    });
 
 
 
 
 
-// arrow syntax
-(() =>  {
-    console.log("arrow iffe called");
-})();
+
+
+
+
+
+
+
+const hamburgerCheckbox = document.getElementById("hamburger-checkbox");
+        const menu = document.querySelector(".menu");
+
+        hamburgerCheckbox.addEventListener("change", function () {
+            if (this.checked) {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        });
