@@ -1,6 +1,10 @@
 
 @use '../abstracts' as a;
 
+.heroimg {
+    max-width: 30%;
+}
+
 #atributes div {
     height: 300px;
     margin-bottom: 150px;
