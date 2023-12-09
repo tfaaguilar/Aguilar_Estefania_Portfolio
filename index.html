@@ -1,60 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <!-- in mobile set initial zoom level of page to 100%, set site size to equal device width not a larger canvas that is shrunk down-->
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <title>Estefania Portfolio</title>
+    <title>BeatBuds</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/grid.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c65e6bc5cc.js" crossorigin="anonymous"></script>
   </head>
 
-<body>
-    <h1 class="hidden">EA. Portfolio</h1>
-<header class="grid-con" id="main-header">
-    <nav id="main-nav" class="col-start-1 col-end-2 m-col-start-7 m-col-end-12"><h2 class="hidden">Nav</h2>
+
+  <body>
+
+    <h1 class="hidden">BeatBuds Earbuds</h1>
+    <div id="sticky-nav-con">
+    <header class="grid-con" id="main-header">
+    <nav id="main-nav" class="col-start-1 col-end-2 m-col-start-7 m-col-end-12">
+    <h2 class="hidden">Main Navigation</h2>
       <button id="button"></button>
         <div id="burger-con">
             <ul id="burger-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="index.html">Contact</a></li>
             </ul>
         </div>  
     </nav>
-    <div class="col-start-3 col-end-5 m-col-start-2 m-col-end-3" id="logo">
-        <img src="images/logo-EA..svg" alt="LogoEA.">
+    <div class="col-span-full m-col-start-1 m-col-end-4" id="logo">
+        <img src="images/logo-beige.svg" alt="BeatBuds Logo">
+    </div>
+</header>
+</div>
+
+    <div class="col-span-full">
+    <img src="images/heroimg.jpg" alt="Hero image">
+    
     </div>
     
-</header>
     <section class="grid-con" id="hero-con">
         <h2 class="hidden">Hero image</h2>
-        <div class="box col-span-full">Hero Image</div>
+        <div class="col-span-full">
+            <h3>Scroll Down to...</h3>
+            <h2>Unleash the Power</h2>
+            <canvas id="explode-view"></canvas>
+        </div>
     </section>
     
    
-    <section class="grid-con" id="contributions">
-    <h2 class="box col-span-full">Contributions</h2>
-        <div class="box col-span-full m-col-start-1 m-col-end-5">User Experience</div>
-        <div class="box col-span-full m-col-start-5 m-col-end-9">Web Development</div>
-        <div class="box col-span-full m-col-start-9 m-col-end-13">Multimedia Production</div>
+    <section class="grid-con" id="atributes">
+    <h2 class="col-span-full">Master your Flow</h2>
+        <div class="col-span-full m-col-start-1 m-col-end-5">
+            <h3>Seamless Connectivity</h3>
+            <img class="imagenAnimada" src="images/conectivity.jpg" alt="conectivity">
+            <p>Effortlessly stay in tune with your world, where every beat and call seamlessly integrates into your life.</p>
+        </div>
+        <div class="col-span-full m-col-start-5 m-col-end-9">
+            <h3>Noise Isolation</h3>
+            <img class="imagenAnimada" src="images/noise.jpg" alt="noise">
+            <p>Immerse yourself in pure soundscapes with our advanced noise isolation technology, where every note takes center stage, undisturbed by the noise of the outside world.</p>
+        </div>
+        <div class="col-span-full m-col-start-9 m-col-end-13">
+            <h3>Sleek and Stylish Design</h3>
+            <img class="imagenAnimada" src="images/design.jpg" alt="design">
+            <p>Elevate your auditory experience with our earbuds, boasting a sleek and stylish design that harmonizes fashion and functionality seamlessly.</p>
+        </div>
     </section>
      
-    <section class="grid-con" id="projects">
-    <h2 class="box col-span-full">Portions of my Projects</h2>
-        <div class="box col-span-full m-col-span-3">Project 1</div>
-        <div class="box col-span-full m-col-span-3">Project 2</div>
-        <div class="box col-span-full m-col-span-3">Project 3</div>
-        <div class="box col-span-full m-col-span-3">Project 4</div>
-    </section>
+    <section class="grid-con" id="hotspots">
+        <h2 class="col-span-full">Unleash your curiosity</h2>
+        <h3 class="col-span-full">Explore the extraordinary features</h3>
+        
+        <div class=" col-span-full">
+                <model-viewer id="model" src="model/Aguilar_Estefania_Earbuds_hotspot.gltf"
+            ar ar-modes="webxr scene-viewer quick-look"
+            camera-controls poster="images/poster.webp"
+            shadow-intensity="1"  exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+
+
+                <button class="Hotspot" slot="hotspot-1" data-position="0.4498600408938401m 0.8069294924369161m -1.1056355484761438m" data-normal="0.27485685516895264m 0.09533748101270756m 0.9567468180667158m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-1">
+                    </div>
+                </button>
+                
+                <button class="Hotspot" slot="hotspot-2" data-position="0.4539372414906218m 0.39577884484679093m -1.1183218303236386m" data-normal="0.2757352477030659m 0.26567684061824354m 0.923788877143061m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-2">
+                    </div>
+                </button>
+                
+                <button class="Hotspot" slot="hotspot-3" data-position="0.21058749014739517m 0.15430218152360323m -1.3736990106502684m" data-normal="-0.7394990496194143m -0.44229520502345193m 0.5074604489270526m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-3">
+                    </div>
+                </button>
+                
+                <button class="Hotspot" slot="hotspot-4" data-position="0.3429648121565666m 0.8384553741551748m -1.4997124811981855m" data-normal="-0.24156916402101755m 0.5490472659315231m -0.8001196402834431m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-4">
+                    </div>
+                </button>
+
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+                <div id="ar-prompt">
+                    <img src="images/ar_hand_prompt.png">
+                </div>
+                </model-viewer> 
+        </div> 
     
+    </section>
 
-    <footer class="grid-con"> 
-        <div class="box col-span-full">Footer</div>
+    <section class="grid-con" id="caracteristics">
+    <h2 class="col-span-full">Earbuds in Action</h2>
+        <div class="col-span-full m-col-span-8">
+            <img class="imagenAnimada" src="images/caracteristics.jpg" alt="caracteristics">
+        </div>
+        <div class="col-span-full m-col-span-4">
+            <p>Unlock a world of sound like never before with Beatbuds. Immerse yourself in pristine audio quality, experience all-day comfort, and stay connected seamlessly. Crafted with innovative technology and designed for style, our earbuds redefine your audio journey.<br><br> Elevate your music, calls, and entertainment to new heights. It's time to discover the difference!<br><br> Select your favorite shade from our options: Vibrant blue - Classic white - Elegant black<br></p>
+            <a class="col-span-full" href="shop.html">Buy Now!</a>
+        </div>
+    </section>
+
+    
+        <div class="grid-con">
+         <h2 class="col-span-full">Uncover the Inner Enchantment</h2>
+        <section id="xray" class="col-span-full">
+            <div id="mobile-tablet-view">
+                <img src="images/earbud-x-ray.jpg" alt="x-ray version">
+                <img src="images/earbud.jpg" alt="textured version image">
+            </div>
+            <h2 class="hidden">X-Ray revealer</h2>
+            <div id="outerShell">
+                <div id="imageCon">
+                    <!-- xray version -->
+                    <div class="slideImage image-right"></div>
+                    <!-- rendered version -->
+                    <div class="slideImage image-left"></div>
+                    <!-- drag bar -->
+                    <div class="slideImage image-drag"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+        
+     <section class="grid-con" id="plastic">
+    <h2 class="col-span-full">Crafted from Recycled Plastic</h2>
+        <div class="col-span-full">
+            <img src="images/sustainability.jpg" alt="sustainability">
+            <h2 class="col-span-full">Join us in making a positive impact on the planet, <br> One earbud at a time...</h2>
+        </div>
+    </section>
+
+    <section class="grid-con" id="options">
+    <h2 class="hidden col-span-full">Seize the Deal</h2>
+        <div class="col-span-full m-col-start-1 m-col-end-5">
+            <h3>Delivery or pickup?</h3>
+            <img class="imagenAnimada" src="images/delivery.png" alt="delivery">
+            <p>Choose your convenience: opt for delivery to your doorstep or swift pickup at a location near you!</p>
+        </div>
+        <div class="col-span-full m-col-start-5 m-col-end-9">
+            <h3>Need help buying?</h3>
+            <img class="imagenAnimada" src="images/help.png" alt="help">
+            <p>We're here to help! Reach out for expert guidance and support in making the right choice.</p>
+        </div>
+        <div class="col-span-full m-col-start-9 m-col-end-13">
+            <h3>Grab Yours Today!</h3>
+            <img class="imagenAnimada" src="images/yours.png" alt="grab yours">
+            <p> Elevate your audio experience with our cutting-edge earbuds. Limited stock available!</p>
+        </div>
+        
+            <a class="box col-span-full" href="index.html">Contact us!</a>
+        
+    </section>
+
+   
+
+
+     <footer id="footer-hero"> 
+        <div class="grid-con">
+            <section id="footer-contact-info" class="col-span-full m-col-start-2 m-col-end-5">
+                <a href="index.html">
+                    <img src="images/logo-beige.svg" alt="Logo">
+                </a>
+                <p>555 Comissioners Rd<br>
+                    London, ON, <br>
+                    Unit 454
+                </p>
+                <p>
+                    Phone:+1 555-5555<br>
+                    E-mail: info@beatbuds.com
+                </p>
+            </section>
+
+            <section class="col-span-full m-col-start-10 m-col-end-13 l-col-start-8 l-col-end-12" id="contact-form">
+           <p>Subscribe to Newsletters</p>
+
+           <form action="email.php" method="POST" enctype="text/plain">
+
+            <input name="fullName" type="text" placeholder="Write your name here">
+
+            <input name="contactInfo" type="text" required placeholder="Email">
+
+            <input name="submit" type="submit" value="Subscribe">
+            
+            </form>
+            </section>  
+
+            <section id="footer-book-now" class="col-span-full m-col-start-10 m-col-end-13 l-col-start-9 l-col-end-12 book-now">
+                
+                <div id="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-google-plus"></i>
+                </div>
+            </section>
+
+            <div id="footer-privacy" class="col-span-full m-col-start-2 m-col-end-12 line-seperator">
+                <p id="price-policy">©2023 BeatBuds LLC. All Rights Reserved. Privacy Policy</p>
+            </div>
+
+            
+
+        </div>
     </footer>
+        
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+
     <script src="js/main.js"></script>
   </body>
 </html>
