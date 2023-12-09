@@ -5,6 +5,24 @@
     max-width: 30%;
 }
 
+#social-media {
+    text-align: center;
+    color: a.$accent-color;
+}
+
+#social-media i {
+    font-size: 32px;
+    margin-bottom: 60px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+
+#player-container {
+    margin-top: 100px;
+}
+
 #atributes div {
     height: 300px;
     margin-bottom: 150px;
@@ -14,8 +32,11 @@
     border-radius: 4px;
 }
 
-#explode-view {
-    max-width: 100%;
+h1 {
+    font-size: 70px;
+    font-weight: 300;
+    text-align: center;
+    color: a.$accent-color;
 }
 
 h2, h3 {
@@ -23,13 +44,6 @@ h2, h3 {
     font-family: a.$heading-font-family;
 }
 
-#xray {
-    margin-bottom: 100px;
-}
-
-#plastic p {
-    text-align: center;
-}
 
 #options {
     margin-top: 50px;
@@ -81,9 +95,32 @@ h2, h3 {
 @media screen and (min-width: 768px) 
 
 {
+
+#hero-con a {
+    color: a.$accent-color;
+    padding: 6px;
+    background-color: a.$secondary-color;
+    border-radius: 5px;
+    font-family: a.$body-font-family;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 330px;
+}
+
+#hero-con a:hover {
+    background-color: a.$primary-color;
+    cursor: pointer;
+}
+
 #options a {
     
     margin-left: 450px;
     margin-right: 450px;
 }
+
+.heroimg {
+    max-width: 30%;
+    margin-left: 800px;
+    position: absolute;
+}
+
 }
