@@ -1,12 +1,84 @@
 
-#hero-con {
-    height: 400px;
+@use '../abstracts' as a;
+
+#atributes div {
+    height: 300px;
+    margin-bottom: 150px;
 }
 
-#contributions div {
-    height: 500px;
+#atributes img {
+    border-radius: 4px;
 }
 
-#projects div {
-    height: 400px;
+#explode-view {
+    max-width: 100%;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+#xray {
+    margin-bottom: 100px;
+}
+
+#plastic p {
+    text-align: center;
+}
+
+#options {
+    margin-top: 50px;
+}
+
+#options img {
+  margin-left: 130px;
+}
+
+#options p {
+    margin-left: 40px;
+}
+
+#options a {
+    color: a.$accent-color;
+    padding: 6px;
+    background-color: a.$secondary-color;
+    border-radius: 5px;
+    font-family: a.$body-font-family;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#options a:hover {
+    background-color: a.$primary-color;
+    cursor: pointer;
+}
+
+#caracteristics {
+    margin-bottom: 80px;
+}
+
+#caracteristics a {
+    color: a.$accent-color;
+    padding: 6px;
+    background-color: a.$secondary-color;
+    border-radius: 5px;
+    font-family: a.$body-font-family;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 150px;
+}
+
+#caracteristics a:hover {
+    background-color: a.$primary-color;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) 
+
+{
+#options a {
+    
+    margin-left: 450px;
+    margin-right: 450px;
+}
 }

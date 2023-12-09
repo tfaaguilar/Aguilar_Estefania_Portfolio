@@ -1,23 +1,25 @@
 @use '../abstracts' as a;
 
-#main-header {
-    background-color: #fff;
-    margin-bottom: 20px;
 
-    #logo {
-        display: block;
-        height: 55px;
-        max-width: 300px;
-        margin-top: 60px;
-        margin-right: auto;
-        margin-left: auto;
-    }
+body {
+   background-color: a.$primary-color;
+   font-family: a.$heading-font-family;
+}
 
-    #main-nav {
-        margin-top: 40px;
-    }
+a {
+   text-decoration: none;
+   transition: all .5s ease-in-out;
+}
 
-    #main-nav button {
+   #main-nav {
+      margin-top: 4%;
+      margin-bottom: 4%;
+      border-left: 1px solid a.$secondary-color;
+      padding-left: 30px;
+      
+   }
+
+#main-nav button {
    width: 30px;
    height: 30px;
    background: url(../images/burger.svg) no-repeat center;
@@ -33,9 +35,17 @@
 }
 
 #burger-con {
-   margin-top: 20px;
-   margin-bottom: 20px;
-   display: none;
+   // position: absolute;
+  margin-top: 20px;
+  margin-bottom: 20px;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 40%;
+//   background-color: #fff;
+//   z-index: 9999;
+  display: none;
+
 }
 
 #burger-con.slide-toggle {
@@ -50,18 +60,14 @@
 
 #main-nav ul li a {
    display: block;
-   padding: 5px 0 10px 0;
+   padding: 2px 0 5px 0;
    text-align: center;
-   color: #F2D8D8;
-   text-decoration: none;
+   color: #E6E2C3;
+   font-size: 14px;
 }
 
 #main-nav ul li a:hover {
-   color: #545B77;
-}
-
-#main-nav ul li {
-   border-bottom: 1px solid #efefef;
+   color: #565575;
 }
 
 #main-nav ul li:first-child {
@@ -72,26 +78,34 @@
    margin-bottom: 10px;
 }
 
+#logo {
+   max-width: 90px;
+   margin-bottom: 20px;
+   margin-left: 140px;
+   margin-top: -40px;
+   
 }
+
+#sticky-nav-con {
+      position: sticky;
+      background-color: #2B2730;
+      top: 0px;
+      border-bottom: solid 1px #E6E2C3;
+      z-index: 1;
+   }
 
 @media screen and (min-width: 768px) {
 
-    #main-header {
-        #main-nav ul {
-            justify-content: flex-end;
-
-        }
-
-        #logo {
-            margin-left: 0;
-            margin-right: 0;
-            margin-top: -65px;
-            
-        }
-    }
 
    #button {
       display: none;
+   }
+
+   #logo {
+      
+      margin-top: 50px;
+      order: -1;
+      margin-left: 170px;
    }
 
    #burger-con {
@@ -115,5 +129,14 @@
    #burger-con ul li:last-child {
       margin-right: 0;
    }
-   
-}
+
+   #main-nav {
+      margin-top: 4%;
+      margin-bottom: 4%;
+      border-left: 1px solid #E6E2C3;
+      padding-left: 30px;
+      
+   }
+   }
+
+
