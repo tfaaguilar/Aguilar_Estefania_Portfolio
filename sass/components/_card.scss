@@ -2,13 +2,16 @@
 @use '../abstracts' as a;
 
 .heroimg {
-    max-width: 30%;
+    max-width: 50%;
+    margin-left: 100px;
 }
 
 #social-media {
     text-align: center;
     color: a.$accent-color;
 }
+
+
 
 #social-media i {
     font-size: 32px;
@@ -17,7 +20,15 @@
     margin-top: 20px;
 }
 
-
+#hero-con a {
+    color: a.$accent-color;
+    padding: 6px;
+    background-color: a.$secondary-color;
+    border-radius: 5px;
+    font-family: a.$body-font-family;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 150px;
+ }   
 
 #player-container {
     margin-top: 100px;
@@ -26,7 +37,7 @@
 
 #atributes div {
     height: 300px;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
 }
 
 #atributes img {
@@ -88,7 +99,7 @@ h2, h3 {
     border-radius: 5px;
     font-family: a.$body-font-family;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    margin-left: 250px;
+    margin-left: 150px;
     margin-top: 300px;
 }
 
@@ -98,7 +109,7 @@ h2, h3 {
 }
 
 #caracteristics img {
-    margin-left: 100px;
+    margin-left: 50px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
@@ -116,6 +127,8 @@ h2, h3 {
     position: absolute;
 }
 
+
+
 #hero-con a {
     color: a.$accent-color;
     padding: 6px;
@@ -129,6 +142,23 @@ h2, h3 {
 #hero-con a:hover {
     background-color: a.$primary-color;
     cursor: pointer;
+}
+
+#caracteristics img {
+    margin-left: 100px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#caracteristics a {
+    color: a.$accent-color;
+    padding: 6px;
+    background-color: a.$secondary-color;
+    border-radius: 5px;
+    font-family: a.$body-font-family;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 250px;
+    margin-top: 300px;
 }
 
 #options a {
@@ -147,6 +177,9 @@ h2, h3 {
     margin-left: -350px;
 }
 
-
+#atributes div {
+    height: 300px;
+    margin-bottom: 300px;
+}
 
 }
