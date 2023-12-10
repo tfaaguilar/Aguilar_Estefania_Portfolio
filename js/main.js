@@ -72,6 +72,12 @@ const imagenes = document.querySelectorAll('.imagenAnimada');
       });
   });
 
+//Hero img
 
+    gsap.set("#heroimg", { opacity: 0 });
+    gsap.to("#heroimg", { opacity: 1, duration: 2, ease: "power2.inOut" });
+ 
+ 
+  
 
 
