@@ -90,19 +90,19 @@ gsap.to(".animateimg", { opacity: 1, duration: 2, ease: "power2.inOut" });
 
 document.addEventListener('DOMContentLoaded', function () {
     //lightbox
-    let member = document.querySelectorAll('.character'),
+    let member = document.querySelectorAll('.work'),
         lightBox = document.querySelector('#lightbox');
 
     function loadHeroData() {
-        lightBox.querySelector('.name').textContent = character[this.getAttribute('data-member')].name;
-        lightBox.querySelector(".lb_heading").textContent = character[this.getAttribute('data-member')].headline;
-        lightBox.querySelector('.bio').textContent = character[this.getAttribute('data-member')].bio;
+        lightBox.querySelector('.name').textContent = work[this.getAttribute('data-project')].name;
+        lightBox.querySelector(".lb_heading").textContent = work[this.getAttribute('data-project')].headline;
+        lightBox.querySelector('.bio').textContent = work[this.getAttribute('data-project')].bio;
         
     }
 
     member.forEach(hero => hero.addEventListener('click', loadHeroData));
 
-let character = {
+let work = {
     Beatbuds : {
         name: "Cinema 4D - Adobe Photoshop - Adobe Illustrator ",
         headline: "Beatbuds",
