@@ -1,3 +1,5 @@
+@use '../abstracts' as a;
+
 #casestudy img {
     border-radius: 10px;
     margin-top: 20px;
@@ -19,4 +21,11 @@
 #process img {
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#results div {
+    background-color: a.$secondary-color;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    padding: 15px;
 }
