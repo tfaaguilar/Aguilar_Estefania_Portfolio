@@ -1,6 +1,6 @@
 @use '../abstracts' as a;
 
-#works img {
+#projects img {
  border-radius: 10px;
     margin-top: 20px;
     max-width: 80%;
@@ -9,14 +9,16 @@
 
 .lightbox { 
     width: 60vw; 
-    height: 65vh; 
-    border-radius: 2%;
+    height: 75vh; 
+    border-radius: 10px;
     position: absolute;
     top: 100%;
     left: 20%;
-    background-color: rgba(17, 6, 24, 0.938);
+    background-color: a.$secondary-color;
+    opacity: 95%;
     z-index: 5000;
     display: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .lightbox_close {
