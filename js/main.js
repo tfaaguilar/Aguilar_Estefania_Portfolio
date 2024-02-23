@@ -1,55 +1,4 @@
-(()=>{
-  const form = document.querySelector("#driverForm");
-  const feedBack = document.querySelector("#feedback");
 
-  function regForm(event) {
-      //console.log("called");
-      event.preventDefault();
-      const url = "adduser.php";
-      const thisform = event.currentTarget;
-      //console.log(thisform.elements.lname.value);
-      const formdata = 
-      "&fname=" + thisform.elements.fname.value +
-      "&email=" + thisform.elements.email.value +
-      "&message=" + thisform.elements.message.value;
-      console.log(formdata);
-
-      fetch(url, {
-          method: "POST",
-          headers: {
-              "Content-Type": "application/x-www-form-urlencoded"
-          },
-          body: formdata
-      })
-      .then(response => response.json())
-      .then(responseText => {
-          console.log(responseText);
-          feedBack.innerHTML = "";
-
-          if (responseText.errors) {
-              responseText.errors.forEach(error => {
-                  const errorElement = document.createElement("p");
-                  errorElement.textContent = error;
-                  feedBack.appendChild(errorElement);
-              });
-          } else {
-              form.reset();
-              const messageElement = document.createElement("p");
-              messageElement.textContent = responseText.message;
-              feedBack.appendChild(messageElement);
-          }
-      })
-      .catch(error => {
-          console.error(error);
-          const messageElement = document.createElement("p");
-          messageElement.textContent= "Ooops, it looks like your either using an older brower or not connected to the internet or our server is having issues. Sorry about that!"
-          feedBack.appendChild(messageElement);
-      });
-  }
-
-  form.addEventListener("submit", regForm);
-
-})();
 
 (function () {
   // Logo animation using "Green Sock"
@@ -169,27 +118,27 @@
         bio: "The Kavorka Skin Care webpage is crafted with a responsive design, providing a seamless experience across various devices. Whether on a desktop, tablet, or smartphone, users can engage with the brand effortlessly. From conceptualizing the user interface to implementing responsive design principles, every step was taken with precision. The result is a digital platform that not only mirrors the elegance of the brand but also elevates the user's interaction, creating a virtual haven for skincare enthusiasts.",
     },
 
-    Burple : {
+        Burple : {
         name: "Developed and Designed with: Cinema 4D - Adobe Photoshop - Adobe Illustrator",
         headline: "Burple * Sparkling Water",
         bio: " The webpage is crafted with a responsive design, ensuring a flawless experience across various devices. From desktops to tablets and smartphones, users can engage with the rebranded Burple Sparkling Water effortlessly. As the designer and developer, I spearheaded the transformation of Burple's online presence. From conceptualizing the visual identity to implementing responsive design principles, every aspect of the webpage reflects the dedication to bringing Burple's rebranding to life in the digital realm.",
         
     },
 
-    NFL : {
+        NFL : {
         name: "Crafted and Designed with: Cinema 4D - Adobe After Effects - Adobe Photoshop",
         headline: "NFL Match - Reel",
         bio: "The reel is a testament to precision editing, seamlessly blending moments of intense gameplay, crowd reactions, and iconic highlights.  As the creator of this NFL Match Reel, I undertook the responsibility of curating and editing footage to encapsulate the pulsating energy of the sport. From selecting the most impactful moments to fine-tuning the audio-visual experience, every detail is a deliberate choice to deliver an unforgettable portrayal of NFL greatness.",
         
     },
 
-    WBL: {
+        WBL: {
         name: "Crafted and Designed with: Adobe XD - Adobe Illustrator - Adobe Photoshop",
         headline: "Work Based Learning",
         bio: "The Work-Based Learning is a digital space meticulously crafted to champion the intersection of education and real-world experience.  As the designer and developer of the Work-Based Learning Hub, my goal was to create an inviting and intuitive digital space. From conceptualizing the user interface to implementing interactive elements, I aimed to craft an online environment that mirrors the dynamic nature of work-based learning itself.",
     },
 
-    Coffee: {
+        Coffee: {
         name: "Crafted and Designed with: Adobe XD - Adobe Illustrator - Adobe Photoshop",
         headline: "Colombian Coffee",
         bio: "This webpage is a virtual haven meticulously designed and developed to celebrate the cultural legacy and exquisite flavors that define Colombia's coffee landscape. As the designer and developer of the Colombian Coffee webpage, my vision was to create a digital sanctuary that captures the essence of Colombian coffee. From the choice of colors and imagery to the implementation of interactive elements, every detail is an intentional effort to convey the richness and authenticity of this beloved cultural treasure.",
@@ -197,4 +146,58 @@
       };
     });
   })();
+})();
+
+
+(()=>{
+  const form = document.querySelector("#driverForm");
+  const feedBack = document.querySelector("#feedback");
+
+  function regForm(event) {
+      //console.log("called");
+      event.preventDefault();
+      const url = "adduser.php";
+      const thisform = event.currentTarget;
+      //console.log(thisform.elements.lname.value);
+      const formdata = 
+      "&fname=" + thisform.elements.fname.value +
+      "&email=" + thisform.elements.email.value +
+      "&message=" + thisform.elements.message.value;
+      console.log(formdata);
+
+      fetch(url, {
+          method: "POST",
+          headers: {
+              "Content-Type": "application/x-www-form-urlencoded"
+          },
+          body: formdata
+      })
+      .then(response => response.json())
+      .then(responseText => {
+          console.log(responseText);
+          feedBack.innerHTML = "";
+
+          if (responseText.errors) {
+              responseText.errors.forEach(error => {
+                  const errorElement = document.createElement("p");
+                  errorElement.textContent = error;
+                  feedBack.appendChild(errorElement);
+              });
+          } else {
+              form.reset();
+              const messageElement = document.createElement("p");
+              messageElement.textContent = responseText.message;
+              feedBack.appendChild(messageElement);
+          }
+      })
+      .catch(error => {
+          console.error(error);
+          const messageElement = document.createElement("p");
+          messageElement.textContent= "Ooops, it looks like your either using an older brower or not connected to the internet or our server is having issues. Sorry about that!"
+          feedBack.appendChild(messageElement);
+      });
+  }
+
+  form.addEventListener("submit", regForm);
+
 })();

@@ -33,7 +33,7 @@ No installation is needed for this site. HTMLs will work on any browsers.
 
 ## Credits
 
-Estefania Aguuilar
+Estefania Aguilar
 
 ## License
 
