@@ -4,18 +4,31 @@
     <title>Estefania Aguilar Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <link href="css/grid.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/c65e6bc5cc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c65e6bc5cc.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script defer src="js/SplitText.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+    <script defer type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script defer type="module" src="js/main.js"></script>
   </head>
 
   <body>
 
-    <h1 class="hidden">EA. Portfolio</h1>
+    <h1 class="hidden">EA. Contact</h1>
     <div id="sticky-nav-con">
     <header class="grid-con" id="main-header">
     <nav id="main-nav" class="col-start-1 col-end-2 m-col-start-7 m-col-end-12">
@@ -37,15 +50,11 @@
 </header>
 </div>
 
-
-
-
-
     <div id="container">
 		<h1 class="hidden">Contact form</h1>
 			<section id="signUp">
 			<h2>I'd like to hear from you</h2>
-            <img src="images/contact.svg" alt="">
+            <img id="contact-image" src="images/contact.svg" alt="contact image">
 			<form id="driverForm">
 				<h3>Drop me a Line!</h3>
 				<p>Enter your details in the form below, and I'll ensure that we stay connected. Let's start the conversation...</p>
@@ -55,8 +64,6 @@
 				<input type="email" id="email">
 				<label for="message">*Message</label>
 				<textarea id="message"></textarea>
-
-				<!-- this makes it a bottom -->
 				<input id="submit" type="submit" value="Contact me!">
 				<section id="feedback"><p>*Please fill out all required sections</p></section>
 			</form>
@@ -96,12 +103,5 @@
             </div>
         </div>
     </footer>
-
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>   
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
-    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
