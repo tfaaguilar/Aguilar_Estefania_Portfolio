@@ -24,8 +24,6 @@
     <script defer type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
     <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
     <script defer type="module" src="js/main.js"></script>
-
-
   </head>
 
   <body data-page="home">
@@ -54,7 +52,7 @@
 </div>
 
     <div class="col-span-full">
-    <img src="images/heroimg.svg" class="heroimg" alt="Hero image" id="heroimg">
+    <img src="images/heroimg.svg" class="heroimg imagenAnimada" alt="Hero image" id="heroimg">
     </div>
     
     <section class="grid-con" id="hero-con">
@@ -68,7 +66,7 @@
                 <span class="skills">Media</span>
                 <span class="skills">Designer</span>
             </h2>
-            <h3>A creative mind is the compass to the best solutions</h3>
+            <h3 class="skills">A creative mind is the compass to the best solutions</h3>
             <div id="social-media">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-instagram"></i>
@@ -94,30 +92,36 @@
     <h2 class="col-span-full">Contributions</h2>
     <p class="col-span-full">Passionate about crafting visually compelling and user-centric solutions that leave a lasting impact. With a keen eye for aesthetics and a deep understanding of design principles, I bring a unique blend of creativity and functionality to every project. <br><br> My contributions encompass a range of design disciplines, including graphic design, web design, and user interface (UI) design. I excel at transforming ideas into visually captivating assets and user experiences that resonate with audiences. </p>
 
-        <div class="col-span-full m-col-start-1 m-col-end-5">
-            <h2>UE</h2>
-            <h3>USER EXPIERENCE</h3>
-            <img class="imagenAnimada" src="images/ue.jpg" alt="User Experience">
-            <p>I firmly believe that exceptional design isn't just about aesthetics; it's about creating meaningful and seamless experiences.</p>
+    <div class="col-span-full m-col-start-1 m-col-end-5 imagen-container">
+        <h2>UE</h2>
+        <h3>USER EXPERIENCE</h3>
+        <div class="imagenAnimada image-wrapper">
+            <img src="images/ue.jpg" alt="User Experience">
+            <p class="hidden-text">I firmly believe that exceptional design isn't just about aesthetics; it's about creating meaningful and seamless experiences.</p>
         </div>
-        <div class="col-span-full m-col-start-5 m-col-end-9">
+    </div>
+        <div class="col-span-full m-col-start-5 m-col-end-9 imagen-container">
             <h2>WD</h2>
             <h3>WEB DESIGN</h3>
-            <img class="imagenAnimada" src="images/wd.jpg" alt="Web Design">
-            <p>I combine aesthetics and functionality to develop websites that not only look stunning but also perform seamlessly.</p>
+            <div class="imagenAnimada image-wrapper">
+            <img src="images/wd.jpg" alt="Web Design">
+            <p class="hidden-text">I combine aesthetics and functionality to develop websites that not only look stunning but also perform seamlessly.</p>
         </div>
-        <div class="col-span-full m-col-start-9 m-col-end-13">
+        </div>
+        <div class="col-span-full m-col-start-9 m-col-end-13 imagen-container">
             <h2>MP</h2>
             <h3>MULTIMEDIA PRODUCTION</h3>
-            <img class="imagenAnimada" src="images/mp.jpg" alt="Multimedia Production">
-            <p>With a keen eye for visual aesthetics, a knack for sound design, and a deep understanding of multimedia technologies.</p>
+            <div class="imagenAnimada image-wrapper">
+            <img src="images/mp.jpg" alt="Multimedia Production">
+            <p class="hidden-text">With a keen eye for visual aesthetics, a knack for sound design, and a deep understanding of multimedia technologies.</p>
+        </div>
         </div>
     </section>
      
     <section class="grid-con" id="caracteristics">
     <h3 class="col-span-full">About Me</h3>
         <div class="col-span-full m-col-start-1 m-col-end-4">
-            <img class="imagenAnimada" src="images/profile.jpg" alt="Estefania Picture">
+            <img class="imagenAnimada2" src="images/profile.jpg" alt="Estefania Picture">
         </div>
         <div class="col-span-full m-col-start-5 m-col-end-12">
             <p>I'm a Colombian Digital Media Designer who has had the privilege of living and working in Canada. My passion for web design originated in my hometown, Medellín, where I grew up in a vibrant and diverse environment. 
@@ -130,20 +134,26 @@
 
     <section class="grid-con" id="options">
     <h2 class="col-span-full">Portions of my Projects</h2>
-        <div class="col-span-full m-col-start-1 m-col-end-5">
-            <img class="imagenAnimada" src="images/earbuds.jpg" alt="Earbuds">
+        <div class="col-span-full m-col-start-1 m-col-end-5 imagen-container">
+            <div class="imagenAnimada image-wrapper">
+            <img src="images/earbuds.jpg" alt="Earbuds">
             <h3>BeatBuds</h3>
-            <p>This website is dedicated to showcasing and promoting the most innovative earbuds in the market.</p>
+            <p class="hidden-text2">This website is dedicated to showcasing and promoting the most innovative earbuds in the market.</p>
+            </div>
         </div>
-        <div class="col-span-full m-col-start-5 m-col-end-9">
-            <img class="imagenAnimada" src="images/kavorka.jpg" alt="Kavorka skincare">
+        <div class="col-span-full m-col-start-5 m-col-end-9 imagen-container">
+            <div class="imagenAnimada image-wrapper">
+            <img src="images/kavorka.jpg" alt="Kavorka skincare">
             <h3>Kavorka</h3>
-            <p>Showcases an innovative brand dedicated to revolutionizing the skincare routines. </p>
+            <p class="hidden-text2">Showcases an innovative brand dedicated to revolutionizing the skincare routines. </p>
         </div>
-        <div class="col-span-full m-col-start-9 m-col-end-13">
-            <img class="imagenAnimada" src="images/burple.jpg" alt="Burple sparkling water">
+        </div>
+        <div class="col-span-full m-col-start-9 m-col-end-13 imagen-container">
+            <div class="imagenAnimada image-wrapper">
+            <img src="images/burple.jpg" alt="Burple sparkling water">
             <h3>Burple</h3>
-            <p>Dedicated to promoting and providing information about "Burple" sparkling water.</p>
+            <p class="hidden-text2">Dedicated to promoting and providing information about "Burple" sparkling water.</p>
+        </div>
         </div>
         
             <a class="box col-span-full" href="index.php">See All</a>

@@ -52,7 +52,7 @@
                 $row['title'].
         '</h3><a href="project_detail_pdo.php?id='.
         $row['id'].
-        '"><img class="thumbnail" src="images/'.    
+        '"><img class="thumbnail imagenAnimada" src="images/'.    
                 $row['image_url'].   
                 '" alt="Project Thumbnail"></a></section>';
 
