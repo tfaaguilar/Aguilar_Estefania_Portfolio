@@ -21,7 +21,7 @@
 
   <body>
 
-  <h1 class="hidden">EA. CaseStudy</h1>
+  <h1 class="hidden">EA. projects</h1>
     <div id="sticky-nav-con">
     <header class="grid-con" id="main-header">
     <nav id="main-nav" class="col-start-1 col-end-2 m-col-start-7 m-col-end-12">
@@ -32,7 +32,6 @@
                 <li><a href="index.html">About</a></li>
                 <li><a href="index.php">Works</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="casestudy.html">CaseStudy</a></li>
             </ul>
         </div>  
     </nav>
