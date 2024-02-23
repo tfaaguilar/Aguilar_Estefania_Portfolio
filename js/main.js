@@ -1,6 +1,21 @@
+//import { animateSkills } from "./modules/animated-skills.js";
+function animateSkills() { 
+  gsap.registerPlugin(SplitText)  
 
+  const split = new SplitText('#skills', { type: 'chars' })
 
-(function () {
+  const typing_text = gsap.timeline()
+  .from(split.chars, {
+  duration: .1,
+  autoAlpha: 0,
+  stagger: {
+      each: .1
+  }
+  });
+
+}
+
+(function logo() {
   // Logo animation using "Green Sock"
   const logo = document.getElementById('logo');
 
@@ -30,6 +45,8 @@
 
     button.addEventListener('click', hamburgerMenu, false);
   })();
+
+
 
   // Imagenes
   (function () {
