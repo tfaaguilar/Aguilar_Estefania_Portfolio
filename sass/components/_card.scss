@@ -215,16 +215,11 @@ h2, h3 {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-#contact-form img {
-    max-width: 20%;
-}
-
-// #container {
-//     max-width: 1280px;
-//     margin: 0 auto;	
-//     background-color: #785EF0;
-//     height: 100%;
-// }
+#contact-image {
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin: 0 auto; /* Establece márgenes automáticos para centrar horizontalmente */
+    max-width: 50%;
+  }
 
 @media screen and (min-width: 768px) 
 
@@ -290,6 +285,7 @@ h2, h3 {
 
 #contact-image {
     max-width: 20%;
+    
 }
 
 
