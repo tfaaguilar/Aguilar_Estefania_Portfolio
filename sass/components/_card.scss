@@ -17,10 +17,6 @@
     margin-top: 20px;
 }
 
-#message {
-    height: 150px;
-}
-
 #player-container {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -74,8 +70,8 @@
 
 .imagenAnimada.image-wrapper {
     position: relative;
-    display: inline-block; /* Ensure the container fits the image size */
-    width: 100%; /* Ajustar el ancho del contenedor al 100% */
+    display: inline-block; 
+    width: 100%; 
 }
 
 .imagenAnimada.image-wrapper:hover .hidden-text {
@@ -215,8 +211,8 @@ h2, h3 {
 }
 
 #contact-image {
-    display: block; /* Asegura que la imagen se muestre como un bloque */
-    margin: 0 auto; /* Establece márgenes automáticos para centrar horizontalmente */
+    display: block; 
+    margin: 0 auto; 
     max-width: 50%;
   }
 
@@ -227,6 +223,10 @@ h2, h3 {
     padding: 20px;
     margin-top: 40px;
     position: relative;
+}
+
+#message {
+    height: 150px;
 }
 
 #submit {
@@ -295,15 +295,15 @@ h2, h3 {
 }
 
 #message {
-    width: 100%;
+    width: 70%;
     height: 150px;
-}
-
-#contact-image {
-    max-width: 20%;
-    // display: flex;
     
 }
 
+#contact-image {
+    max-width: 100%;
+    margin-top: 60px;
+    margin-left: 30px;   
+}
 
 }
