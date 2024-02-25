@@ -28,11 +28,11 @@ $images = explode(",", $row['images']);
 <p class="description"><?php echo $row['objective']; ?></p>
 <h2>Goals</h2>
 <p class="description"><?php echo $row['goals']; ?></p>
-<section class="project-gallery">
+<section class="project-gallery grid-con">
 <?php 
 for($i =0; $i < count($images); $i++) {
 
-echo '<img class="portfolio-image" src="images/'.$images[$i].'" alt="Project Image">';
+echo '<img class="col-span-full portfolio-image" src="images/'.$images[$i].'" alt="Project Image">';
 
 }
 ?>
@@ -43,10 +43,6 @@ echo '<img class="portfolio-image" src="images/'.$images[$i].'" alt="Project Ima
 <p class="description"><?php echo $row['process']; ?></p>
 <h2>Results</h2>
 <p class="description"><?php echo $row['results']; ?></p>
-
-
-
-
 
 <a class="back" href="index.php">Go back to "Works"</a>
 
