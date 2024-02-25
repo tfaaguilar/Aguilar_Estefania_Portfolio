@@ -50,23 +50,25 @@
 </header>
 </div>
 
-    <div id="container">
+    <div class="grid-con" id="container">
 		<h1 class="hidden">Contact form</h1>
-			<section class="grid-con" id="signUp">
-			<h2 class="col-span-full">I'd like to hear from you</h2>
-            <img class="col-span-full" id="contact-image" src="images/contact.svg" alt="contact image">
-			<form class="col-span-full" id="driverForm">
+			<section class="col-span-full" id="signUp">
+			<h2>I'd like to hear from you</h2>
+            <div>
+            <img id="contact-image" src="images/contact.svg" alt="contact image">
+			<form class="col-span-full m-col-start-8 m-col-end-13" id="driverForm">
 				<h3>Drop me a Line!</h3>
 				<p>Enter your details in the form below, and I'll ensure that we stay connected. Let's start the conversation...</p>
-				<label for="fname">*Name</label>
-				<input type="text" id="fname">
-				<label for="email">*Email</label>
-				<input type="email" id="email">
-				<label for="message">*Message</label>
-				<textarea id="message"></textarea>
+				<label class="hidden" for="fname">*Name</label>
+				<input type="text" id="fname" placeholder="Name">
+				<label class="hidden" for="email">*Email</label>
+				<input type="email" id="email" placeholder="Email">
+				<label class="hidden" for="message">*Message</label>
+				<textarea id="message" placeholder="Leave me a message here..."></textarea>
 				<input id="submit" type="submit" value="Contact me!">
 				<section id="feedback"><p>*Please fill out all required sections</p></section>
 			</form>
+            
 			</section>			
 	</div>
 
