@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <?php
 require_once('includes/connect_pdo.php');
 
@@ -11,14 +13,16 @@ $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 $images = explode(",", $row['images']);
 ?>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $row['title']; ?></title>
     <link rel="stylesheet" href="css/main.css" type="text/css">
-
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+    <script defer type="module" src="js/main.js"></script>
 </head>
+
 <body data-page="home">
 
 <h1><?php echo $row['title']; ?></h1>
