@@ -107,12 +107,12 @@
     text-align: center;
 }
 
-// .description {
-// color: #393759;
-//    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-//    border-radius: 10px;
-//    padding: 20px;
-// }
+.description {
+color: #393759;
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+   border-radius: 10px;
+   padding: 20px;
+}
 
 .back {
     color: a.$accent-color;
@@ -301,9 +301,9 @@ h2, h3 {
     margin-left: 30px;   
 }
 
-// .description {
-//    margin-left: 30px;
-//    margin-right: 25px;
-// }
+.description {
+   margin-left: 100px;
+   margin-right: 100px;
+}
 
 }
