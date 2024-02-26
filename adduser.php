@@ -5,7 +5,7 @@
     header("Content-Type: application/json; charset=UTF-8");
 
     
-    $db_host = 'localhost:8889';
+    $db_host = 'localhost';
     $db_user = 'lvswzl36_tfaaguilar';
     $db_pass = '1AOt42W&@SuC';
     $db_name = 'lvswzl36_e_a_portfolio';
