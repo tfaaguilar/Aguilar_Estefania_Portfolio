@@ -19,7 +19,7 @@ $images = explode(",", $row['images']);
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
 </head>
-<body>
+<body data-page="home">
 
 <h1><?php echo $row['title']; ?></h1>
 
