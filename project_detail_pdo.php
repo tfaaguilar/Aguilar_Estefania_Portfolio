@@ -48,7 +48,7 @@ echo '<img class="col-span-full portfolio-image" src="images/'.$images[$i].'" al
 <h2>Results</h2>
 <p class="description"><?php echo $row['results']; ?></p>
 
-<a class="back" href="index.php">Go back to "Works"</a>
+<a class="back" href="works.php">Go back to "Works"</a>
 
 
 </body>
