@@ -6,9 +6,9 @@
 
     
     $db_host = 'localhost:8889';
-    $db_user = 'lvswzl36_tfaaguilar';
-    $db_pass = '1AOt42W&@SuC';
-    $db_name = 'lvswzl36_e_a_portfolio';
+    $db_user = 'root';
+    $db_pass = 'root';
+    $db_name = 'a_e_portfolio';
 
     
     $connection = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
