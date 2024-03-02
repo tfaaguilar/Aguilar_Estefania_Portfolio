@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Feb 23, 2024 at 06:59 PM
+-- Generation Time: Mar 02, 2024 at 05:31 PM
 -- Server version: 5.7.39
 -- PHP Version: 8.2.0
 
@@ -46,7 +46,7 @@ INSERT INTO media (id, project_id, image_filename) VALUES
 (7, 3, 'image3a.png'),
 (8, 3, 'image3b.png'),
 (9, 3, 'image3c.png'),
-(10, 1, 'image1d.jpg'),
+(10, 1, 'image1d.png'),
 (11, 1, 'image1e.png'),
 (12, 1, 'image1f.png'),
 (13, 3, 'image3d.png'),
@@ -105,7 +105,30 @@ INSERT INTO users (id, fname, email, message) VALUES
 (4, 'Maria', 'maria@gmail.com', 'I am interested on your projects.'),
 (5, 'Juan', 'juan@gmail.com', 'Hi'),
 (6, 'Marco', 'marco@gmail.com', 'Hello'),
-(7, 'Sarah', 'sarah@gmail.com', 'Hola');
+(7, 'Sarah', 'sarah@gmail.com', 'Hola'),
+(8, 'Diego', 'diego@gmail.com', 'Hello'),
+(9, 'Zoe', 'Zoe@gmail.com', 'Hello'),
+(10, 's', 's@f.com', 's'),
+(11, 'a', 'g@mil.com', 'aaa');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table usuarios
+--
+
+CREATE TABLE usuarios (
+  id int(10) UNSIGNED NOT NULL,
+  username varchar(30) NOT NULL,
+  password varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table usuarios
+--
+
+INSERT INTO usuarios (id, username, password) VALUES
+(1, 'tfaaguilar', '123456');
 
 --
 -- Indexes for dumped tables
@@ -131,6 +154,12 @@ ALTER TABLE users
   ADD PRIMARY KEY (id);
 
 --
+-- Indexes for table usuarios
+--
+ALTER TABLE usuarios
+  ADD PRIMARY KEY (id);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -151,6 +180,12 @@ ALTER TABLE projects
 --
 ALTER TABLE users
   MODIFY id smallint(4) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table usuarios
+--
+ALTER TABLE usuarios
+  MODIFY id int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
