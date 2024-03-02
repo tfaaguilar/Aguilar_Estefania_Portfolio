@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php
-require_once('includes/connect_pdo.php');
+require_once('includes/connect.php');
 
 $query = 'SELECT GROUP_CONCAT(image_filename) AS images, description, title, objective, goals, responsabilities, process, results FROM projects, media WHERE projects.id = project_id AND projects.id = :projectId';
 

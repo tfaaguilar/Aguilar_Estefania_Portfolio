@@ -22,12 +22,31 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
  
 <form action="edit_project.php" method="POST">
 <input name="pk" type="hidden" value="<?php echo $row['id']; ?>">
+
     <label for="title">project title: </label>
     <input name="title" type="text" value="<?php echo $row['title']; ?>" required><br><br>
+
     <label for="thumb">project thumbnail: </label>
-    <input name="thumb" type="text" required value="<?php echo $row['image_url']; ?>"><br><br>
+    <input name="thumb" type="file" required value="<?php echo $row['image_url']; ?>"><br><br>
+
     <label for="desc">project description: </label>
-    <textarea name="desc" required><?php echo $row['description']; ?></textarea><br><br>
+    <textarea name="desc" type="text" required><?php echo $row['description']; ?></textarea><br><br>
+
+    <label for="objective">Project Objective: </label>
+    <textarea name="objective" type="text" required><?php echo $row['objective']; ?></textarea><br><br>
+
+    <label for="goals">Project Goals: </label>
+    <textarea name="goals" type="text" required><?php echo $row['goals']; ?></textarea><br><br>
+
+    <label for="responsabilities">Project Responsabilities: </label>
+    <textarea name="responsabilities" type="text" required><?php echo $row['responsabilities']; ?></textarea><br><br>
+
+    <label for="process">Project Process: </label>
+    <textarea name="process" type="text" required><?php echo $row['process']; ?></textarea><br><br>
+
+    <label for="results">Project Results: </label>
+    <textarea name="results" type="text" required><?php echo $row['results']; ?></textarea><br><br>
+
     <input name="submit" type="submit" value="Edit">
 </form>
 <?php

@@ -28,9 +28,9 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
   echo  '<p class="project-list">'.
   $row['title'].
-  '<a href="edit_project_form.php?id='.$row['id'].'">edit</a>'.
+  '<a href="edit_project_form.php?id='.$row['id'].'"> edit</a>'.
 
-  '<a href="delete_project.php?id='.$row['id'].'">delete</a></p>';
+  '<a href="delete_project.php?id='.$row['id'].'"> delete</a></p>';
 }
 
 $stmt = null;
@@ -39,13 +39,33 @@ $stmt = null;
 <br><br><br>
 <h3>Add a New Project</h3>
 <form action="add_project.php" method="post">
-    <label for="title">project title: </label>
+
+    <label for="title">Project Title: </label>
     <input name="title" type="text" required><br><br>
-    <label for="thumb">project thumbnail: </label>
+
+    <label for="thumb">Project Thumbnail: </label>
     <input name="thumb" type="file" required><br><br>
-    <label for="desc">project description: </label>
-    <textarea name="desc" required></textarea><br><br>
+
+    <label for="desc">Project Description: </label>
+    <textarea name="desc" type="text" required></textarea><br><br>
+
+    <label for="objective">Project Objective: </label>
+    <textarea name="objective" type="text" required></textarea><br><br>
+
+    <label for="goals">Project Goals: </label>
+    <textarea name="goals" type="text" required></textarea><br><br>
+
+    <label for="responsabilities">Project Responsabilities: </label>
+    <textarea name="responsabilities" type="text" required></textarea><br><br>
+
+    <label for="process">Project Process: </label>
+    <textarea name="process" type="text" required></textarea><br><br>
+
+    <label for="results">Project Results: </label>
+    <textarea name="results" type="text" required></textarea><br><br>
+
     <input name="submit" type="submit" value="Add">
+
 </form>
 <br><br><br>
 <a href="logout.php">log out</a>
