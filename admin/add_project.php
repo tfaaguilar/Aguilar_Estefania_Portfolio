@@ -23,6 +23,7 @@ $stmtMedia = $connection->prepare($queryMedia);
 $stmtMedia->bindParam(1, $last_id, PDO::PARAM_INT);  // Corrected variable name
 $stmtMedia->bindParam(2, $_POST['image_filename'], PDO::PARAM_STR);
 
+
 $stmtMedia->execute();
 
 $stmtProjects = null;
