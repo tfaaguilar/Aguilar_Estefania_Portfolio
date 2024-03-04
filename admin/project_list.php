@@ -64,6 +64,9 @@ $stmt = null;
     <label for="results">Project Results: </label>
     <textarea name="results" type="text" required></textarea><br><br>
 
+    <label for="image_filename">Project Image: </label>
+    <input name="image_filename" type="file" required><br><br>
+
     <input name="submit" type="submit" value="Add">
 
 </form>
