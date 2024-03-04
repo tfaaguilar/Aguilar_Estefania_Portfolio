@@ -47,6 +47,9 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
     <label for="results">Project Results: </label>
     <textarea name="results" type="text" required><?php echo $row['results']; ?></textarea><br><br>
 
+    <label for="image_filename">Project Image: </label>
+    <input name="image_filename" type="file" required><br><br>
+
     <input name="submit" type="submit" value="Edit">
 </form>
 <?php
