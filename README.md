@@ -1,4 +1,4 @@
-# Aguilar_Estefania_Portfolio
+# Estefania Aguilar - Interactive Media Design Portfolio
 
 Welcome!
 My name is Estefania Aguilar, I'm becoming a professional in Interactive Media Design, I can offer a range of creative and technical services aimed at enhancing user experiences and engagement in digital environments. I bring expertise in designing interactive content for various platforms.
