@@ -87,7 +87,9 @@ echo '<img class="col-span-full portfolio-image" src="images/'.$images[$i].'" al
 <h2>Results</h2>
 <p class="description"><?php echo $row['results']; ?></p>
 
-<a class="back" href="works.php">Go back to "Works"</a>
+<div class="back grid-con" >
+<a class="col-start-2 col-end-4 m-col-start-5 m-col-end-9" href="works.php">Go back to "Works"</a>
+</div>
 
 <footer id="footer-hero"> 
         <div class="grid-con">
