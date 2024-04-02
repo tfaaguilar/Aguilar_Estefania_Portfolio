@@ -83,7 +83,7 @@
                 </a>
                     <div id="footer-nav">
                         <ul>
-                            <li><a href="#caracteristics">About</a></li>
+                            <li><a href="index.html">About</a></li>
                             <li><a href="works.php">Works</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
@@ -95,8 +95,6 @@
                     <i class="fa-brands fa-linkedin" onclick="window.open('https://www.linkedin.com/in/estefaniaaguilar01/', '_blank')"></i>
                     <i class="fa-brands fa-github" onclick="window.open('https://github.com/tfaaguilar', '_blank')"></i>
                     <i class="fa-brands fa-square-behance" onclick="window.open('https://www.behance.net/estefanaguilar9', '_blank')"></i>
-                    <i class="fa-brands fa-facebook" onclick="window.open('https://www.facebook.com/', '_blank')"></i>
-                    <i class="fa-brands fa-instagram" onclick="window.open('https://www.instagram.com/', '_blank')"></i>
                 </div>
             </section>
 
