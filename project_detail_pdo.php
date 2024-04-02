@@ -80,7 +80,7 @@ echo '<img class="col-span-full portfolio-image" src="images/'.$images[$i].'" al
 }
 ?>
 </section>
-<h2>Responsabilities</h2>
+<h2>Responsibilities</h2>
 <p class="description"><?php echo $row['responsabilities']; ?></p>
 <h2>Process</h2>
 <p class="description"><?php echo $row['process']; ?></p>
