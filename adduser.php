@@ -8,7 +8,7 @@
     $db_host = 'localhost';
     $db_user = 'lvswzl36_tfaaguilar';
     $db_pass = '1AOt42W&@SuC';
-    $db_name = 'lvswzl36_e_a_portfolio';
+    $db_name = 'lvswzl36_e_a_portfolio2';
 
     
     $connection = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
