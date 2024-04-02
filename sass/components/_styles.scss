@@ -24,6 +24,14 @@
     color: #5b588f;
 }
 
+.link-item {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+
+
 #player-container {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -235,14 +243,40 @@ h2, h3 {
     margin-bottom: 40px;
 }
 
+.link-container a {
+    color: a.$accent-color;
+    padding: 6px;
+    background-color: a.$secondary-color;
+    border-radius: 5px;
+    font-family: a.$body-font-family;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+      
+}
+
+.link-container a:hover {
+    cursor: pointer;
+    background-color: a.$primary-color;
+}
+
+
+
 @media screen and (min-width: 768px) 
 
 {
     .heroimg {
     max-width: 30%;
-    margin-left: 800px;
+    margin-left: 500px;
     position: absolute;
 }
+
+#hero-con h2 {
+    font-size: 40px;
+}
+
+.link-container a {
+    margin-left: 10px;
+ }
 
 #hero-con a {
     color: a.$accent-color;
@@ -313,4 +347,39 @@ h2, h3 {
    margin-right: 100px;
 }
 
+}
+
+@media screen and (min-width: 1200px) 
+
+{
+    .heroimg {
+    max-width: 30%;
+    margin-left: 800px;
+    position: absolute;
+}
+
+.link-container a {
+    margin-left: -10px;
+   
+ }
+}
+
+@media screen and (min-width: 1600px) 
+
+{
+    .heroimg {
+    max-width: 30%;
+    margin-left: 1000px;
+    position: absolute;
+}
+}
+
+@media screen and (min-width: 1920px) 
+
+{
+    .heroimg {
+    max-width: 30%;
+    margin-left: 1100px;
+    position: absolute;
+}
 }
